@@ -1,0 +1,14 @@
+/Users/srilakshmi/RTOS/build/CMakeFiles/ipc.dir
+/Users/srilakshmi/RTOS/build/CMakeFiles/diagnostics.dir
+/Users/srilakshmi/RTOS/build/CMakeFiles/hal.dir
+/Users/srilakshmi/RTOS/build/CMakeFiles/rt.dir
+/Users/srilakshmi/RTOS/build/CMakeFiles/security.dir
+/Users/srilakshmi/RTOS/build/CMakeFiles/robotics.dir
+/Users/srilakshmi/RTOS/build/CMakeFiles/ipc_bus_test.dir
+/Users/srilakshmi/RTOS/build/CMakeFiles/shm_transport_test.dir
+/Users/srilakshmi/RTOS/build/CMakeFiles/diagnostics_cli.dir
+/Users/srilakshmi/RTOS/build/CMakeFiles/hal_polling.dir
+/Users/srilakshmi/RTOS/build/CMakeFiles/robot_control_demo.dir
+/Users/srilakshmi/RTOS/build/CMakeFiles/rt_pipeline_demo.dir
+/Users/srilakshmi/RTOS/build/CMakeFiles/edit_cache.dir
+/Users/srilakshmi/RTOS/build/CMakeFiles/rebuild_cache.dir

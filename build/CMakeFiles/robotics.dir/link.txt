@@ -1,0 +1,2 @@
+/usr/bin/ar qc librobotics.a CMakeFiles/robotics.dir/src/robotics/src/control_loop.cpp.o CMakeFiles/robotics.dir/src/robotics/src/sensor_fusion.cpp.o
+/usr/bin/ranlib librobotics.a

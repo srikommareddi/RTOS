@@ -1,0 +1,77 @@
+flowchart TB
+  %% Hardware Layer
+  subgraph HW[Hardware & Compute]
+    SoC[Multi-core SoC/SOM]
+    MCU[Safety MCU/FPGA]
+    CAM[Cameras]
+    SENS[Sensors: IMU/Force/Encoders]
+    ACT[Actuators/Motor Drives]
+    BUS[CAN / I2C / SPI / PCIe / USB]
+  end
+
+  %% Boot/OS Layer
+  subgraph OS[Boot, BSP & OS]
+    BOOT[Secure Boot Chain]
+    BSP[Board Support Package]
+    KERN[Linux/QNX Kernel + RT Services]
+    DRV[Device Drivers]
+  end
+
+  %% Middleware
+  subgraph MW[Middleware & IPC]
+    IPC[IPC Fabric: RPMsg/DDS/gRPC/SHM]
+    SYNC[Time Sync]
+    SER[protobuf Serialization]
+    HLTH[Health + Telemetry]
+  end
+
+  %% Core Services
+  subgraph CORE[Core Functional Services]
+    VSN[Vision Pipeline]
+    CTRL[Control Pipeline]
+    SAFE[Safety Manager]
+    UI[UI & Workflow]
+  end
+
+  %% Diagnostics & Test
+  subgraph DIAG[Diagnostics & Test]
+    LOG[Logs/Telemetry Store]
+    DIAGT[Service Tools]
+    FAULT[Fault Injection]
+    TEST[Unit/Integration/System Tests]
+  end
+
+  %% Security & Compliance
+  subgraph SEC[Cybersecurity & Compliance]
+    AUTH[Auth/Encryption]
+    UPD[Signed Updates + Rollback]
+    QMS[QMS Docs + Traceability]
+  end
+
+  %% Connections
+  SoC --> BOOT --> BSP --> KERN --> DRV
+  MCU --> SAFE
+  CAM --> DRV --> VSN
+  SENS --> DRV --> CTRL
+  ACT <-- CTRL
+  BUS --> DRV
+  KERN --> IPC --> VSN
+  KERN --> IPC --> CTRL
+  KERN --> IPC --> UI
+  IPC --> SYNC --> CTRL
+  IPC --> SER --> VSN
+  IPC --> HLTH --> SAFE
+
+  VSN --> UI
+  SAFE --> CTRL
+  SAFE --> HLTH
+
+  VSN --> LOG
+  CTRL --> LOG
+  SAFE --> LOG
+  LOG --> DIAGT
+  DIAGT --> FAULT --> TEST
+
+  BOOT --> AUTH
+  AUTH --> UPD
+  QMS --> TEST

@@ -1,0 +1,2 @@
+/usr/bin/ar qc libsecurity.a CMakeFiles/security.dir/src/security/src/kms_client.cpp.o CMakeFiles/security.dir/src/security/src/mock_crypto_provider.cpp.o CMakeFiles/security.dir/src/security/src/secure_boot.cpp.o
+/usr/bin/ranlib libsecurity.a

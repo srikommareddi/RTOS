@@ -1,0 +1,1 @@
+/usr/bin/c++ -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/robot_control_demo.dir/src/robotics/app/robot_control_demo.cpp.o -o robot_control_demo  librobotics.a librt.a

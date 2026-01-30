@@ -1,0 +1,2 @@
+/usr/bin/ar qc libdiagnostics.a CMakeFiles/diagnostics.dir/src/diagnostics/src/health_monitor.cpp.o CMakeFiles/diagnostics.dir/src/diagnostics/src/fault_manager.cpp.o CMakeFiles/diagnostics.dir/src/diagnostics/src/watchdog.cpp.o
+/usr/bin/ranlib libdiagnostics.a

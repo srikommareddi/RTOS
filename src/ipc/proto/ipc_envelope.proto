@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package rtos.ipc;
+
+message IpcEnvelope {
+  string topic = 1;
+  bytes payload = 2;
+  uint64 sequence = 3;
+  uint32 qos = 4;
+  uint64 timestamp_ns = 5;
+  string type = 6;
+  uint64 ack_for = 7;
+  bool is_ack = 8;
+}

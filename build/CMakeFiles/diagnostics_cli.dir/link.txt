@@ -1,0 +1,1 @@
+/usr/bin/c++ -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/diagnostics_cli.dir/src/diagnostics/app/diagnostics_cli.cpp.o -o diagnostics_cli  libdiagnostics.a

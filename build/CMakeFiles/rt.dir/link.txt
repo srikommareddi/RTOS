@@ -1,0 +1,2 @@
+/usr/bin/ar qc librt.a CMakeFiles/rt.dir/src/rt/src/rt_scheduler.cpp.o
+/usr/bin/ranlib librt.a

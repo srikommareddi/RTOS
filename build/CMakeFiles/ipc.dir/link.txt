@@ -1,0 +1,2 @@
+/usr/bin/ar qc libipc.a CMakeFiles/ipc.dir/src/ipc/src/binary_serializer.cpp.o CMakeFiles/ipc.dir/src/ipc/src/ipc_bus.cpp.o CMakeFiles/ipc.dir/src/ipc/src/local_transport.cpp.o CMakeFiles/ipc.dir/src/ipc/src/shm_transport.cpp.o CMakeFiles/ipc.dir/src/ipc/src/tcp_transport.cpp.o CMakeFiles/ipc.dir/src/ipc/src/unix_transport.cpp.o
+/usr/bin/ranlib libipc.a

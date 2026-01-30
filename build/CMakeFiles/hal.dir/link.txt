@@ -1,0 +1,2 @@
+/usr/bin/ar qc libhal.a CMakeFiles/hal.dir/src/hal/src/can_bus.cpp.o CMakeFiles/hal.dir/src/hal/src/i2c_bus.cpp.o CMakeFiles/hal.dir/src/hal/src/spi_bus.cpp.o
+/usr/bin/ranlib libhal.a
