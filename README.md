@@ -1,4 +1,4 @@
-# Future-Forward Embedded Platform Scaffold
+#  Embedded Platform Scaffold
 
 This repository provides a high-level architecture scaffold for a future-forward
 robotic surgical platform. It includes a system diagram, IPC module skeleton,
